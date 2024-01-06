@@ -18,6 +18,7 @@ int main()
     srand(time(NULL));
     int randomIndex = rand() % 26;
     char randomChar = 'A' + randomIndex;
+    printf(" %c",randomChar);
     if (game_intro())
     {
         totalAttempts = 0;
@@ -149,7 +150,7 @@ void windisplayScoreboard(int chances, int totalAttempts)
     printf("\n\t\t\t\t\t\t                         Chances Left : %d                          \n", (chances - totalAttempts));
     printf("\n\t\t\t\t\t\t                         -------------                         \n");
     if (totalAttempts == 0)
-        printf("\n\t\t\t\t\t\t                YOU'RE A CHAMPION  !!                      \n");
+    printf("\n\t\t\t\t\t\t                       YOU'RE A CHAMPION  !!                   \n");
     printf("\n\t\t\t\t\t\t*****************************************************************");
 }
 
